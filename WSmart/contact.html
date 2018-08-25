@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>WorkSmart</title>
+	<link href="css/normalize.css" rel="stylesheet">
+	<link href="css/font-awesome.min.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+
+</head>
+<body>
+	
+	<section id="banner">
+		<div class="wrapper">
+			<header>
+
+				<p id="logo">WORK<span>SMART</span></p>
+				
+				<nav>
+
+					<a href="index.html">Home</a>
+					<a href="services.html">Services</a>
+					<a href="contact.html">Contact Us</a>
+					<!-- <a href="">Shop Here</a> -->
+					
+				</nav>
+
+			</header>
+
+		</div>
+
+		<div class="content_page">
+			<h1 class="title">OUR CONTACTS</h1>
+			<h2 class="sub_title">Get In Touch</h2>
+		</div>
+	</section>
+
+	<section id="contact" class="clearfix">
+		<div class="wrapper">
+			
+			<div class="contact_address">
+				<h2 class="contact_header">Our Contacts</h2>
+				<p>
+					<i class="fa fa-map-marker" aria-hidden="true"></i>
+					Address: 1st floor, Pentagon Hall,
+					<br>
+					University of Ghana, Accra.
+				</p>
+				<p>
+					<i class="fa fa-phone" aria-hidden="true"></i>
+					Phone: +233-249455121
+				</p>
+				<p><i class="fa fa-envelope-o" aria-hidden="true"></i>
+					E-mail: support@worksmart.limitted
+				</p>
+				<hr>
+				<p style="margin-top: 2rem;">
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae atque, quas sequi nulla labore animi.
+				</p>
+			</div>
+
+			<div class="contact_form">
+				<h2 class="contact_header">Get In Touch</h2>
+				<form action="#" method="post">
+					<input type="text" placeholder="Your Name">
+					<input type="email" placeholder="E-mail">
+					<input type="text" placeholder="Phone Number">
+					<textarea name="sms"cols="10" rows="6" placeholder="Message"></textarea>
+					<input type="submit" value="Send Message">
+				</form>
+			</div>
+
+		</div>
+	</section>
+
+	<footer id="footer">
+		<div class="wrapper">
+			<div class="footer_cols" id="footer_cols_left">
+				<h2>Contact Us</h2>
+				<p>
+					WorkSmart
+					<br>
+					Address: 1st floor, 
+					<br>
+					Pentagon Administration Block,
+					<br>
+					University of Ghana.
+					<br>
+					+233-244798979
+					<br>
+					+233-302904324
+					<br>
+					support@worksmart.limited
+				</p>
+				<p id="social_icons">
+					<a href=""><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+					<a href=""><i class="fa fa-twitter-square fa-2x" aria-hidden="true"></i></a>
+					<a href=""><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+					<a href=""><i class="fa fa-linkedin-square fa-2x" aria-hidden="true"></i></a>
+					<a href=""><i class="fa fa-google-plus-square fa-2x" aria-hidden="true"></i></a>
+					<a href=""><i class="fa fa-skype fa-2x" aria-hidden="true"></i></a>
+				</p>
+			</div>
+			<div class="footer_cols" id="footer_cols_right">
+				<h2 style="color: white;">Our Services</h2>
+				<ul>
+					<li><a href="">Web Application Development</a></li>
+					<li><a href="">Email Services</a></li>
+					<li><a href="">Technical Support</a></li>
+					<li><a href="">System Security Engineering</a></li>
+					<li><a href="">Mobile App Development</a></li>
+					<li><a href="">Data Analytics</a></li>
+					<li><a href="">IT Outsourcing</a></li>
+					<li><a href="">Hosting Services</a></li>
+					<li><a href="">Domain Sales</a></li>
+				</ul>
+				
+			</div>
+		</div>
+	</footer>
+
+</body>
+</html>
+
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 10000); // Change image every 2 seconds
+}
+</script>
